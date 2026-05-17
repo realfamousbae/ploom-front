@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://ploom-backend.onrender.com/api/$1"
+    }
+  ]
+}

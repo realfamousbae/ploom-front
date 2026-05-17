@@ -19,14 +19,5 @@ export default defineConfig(() => {
         '@app': path.resolve(__dirname, './src/app'),
       },
     },
-    server: {
-      proxy: {
-        '/api': {
-          target: 'https://ploom-backend.onrender.com',
-          changeOrigin: true,
-          secure: false,
-        },
-      },
-    },
   }
 })
