@@ -5,8 +5,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import path from 'path'
 
 export default defineConfig(() => {
-  const API_BASE_URL = 'https://ploom-backend.onrender.com'
-
   return {
     plugins: [
       react(),
@@ -24,7 +22,7 @@ export default defineConfig(() => {
     server: {
       proxy: {
         '/api': {
-          target: API_BASE_URL,
+          target: 'https://ploom-backend.onrender.com',
           changeOrigin: true,
           secure: false,
         },
